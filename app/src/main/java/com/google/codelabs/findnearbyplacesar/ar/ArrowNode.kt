@@ -22,7 +22,7 @@ class ArrowNode(fragment: PlacesArFragment, private val origin: LatLng, private 
 
         // 화살표 모델을 로드하고 추가합니다.
         ModelRenderable.builder()
-            .setSource(fragment.context, Uri.parse("raw://arrow.gltf")) // 화살표 모델 파일의 경로 지정
+            .setSource(fragment.context, Uri.parse("res/assets/model.sfb")) // 화살표 모델 파일의 경로 지정
             .build()
             .thenAccept { renderable ->
                 // 모델 렌더링 설정
